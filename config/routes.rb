@@ -51,7 +51,9 @@ Ticketee4::Application.routes.draw do
   # root :to => 'welcome#index'
   root :to => 'projects#index'
 
-  resources :projects
+  resources :projects do
+    resources :tickets
+  end
 
   # See how all your routes lay out with "rake routes"
 
