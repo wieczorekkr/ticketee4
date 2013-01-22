@@ -47,4 +47,5 @@ group :test do
 	gem 'database_cleaner'
 	gem 'coffee-rails', '~> 3.2.1'
 	gem 'dynamic_form'
+	gem 'factory_girl_rails'
 end
