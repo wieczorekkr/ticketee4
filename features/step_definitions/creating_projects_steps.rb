@@ -15,5 +15,13 @@ When /^I press "(.*?)"$/ do |arg1|
 end
 
 Then /^I should see "(.*?)"$/ do |arg1|
-  page.has_content?(arg1)
+  assert(page.has_content?(arg1))
+end
+
+Then /^I should be on the project page for "(.*?)"$/ do |arg1|
+  assert(page.has_content?(arg1))
+end
+
+Then /^I should see title "(.*?)"$/ do |arg1|
+  page.source.should have_xpath "//title" , text: arg1
 end
