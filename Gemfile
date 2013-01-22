@@ -45,4 +45,6 @@ group :test do
 	gem 'cucumber-rails'
 	gem 'capybara'
 	gem 'database_cleaner'
+	gem 'coffee-rails', '~> 3.2.1'
+	gem 'dynamic_form'
 end
