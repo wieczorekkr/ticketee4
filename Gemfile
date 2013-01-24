@@ -48,6 +48,7 @@ group :test do
 	gem 'coffee-rails', '~> 3.2.1'
 	gem 'dynamic_form'
 	gem 'factory_girl_rails'
+	gem 'email_spec'
 end
 
 gem 'devise', '~> 1.4.3'
