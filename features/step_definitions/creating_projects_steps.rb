@@ -7,7 +7,9 @@ When /^I follow "(.*?)"$/ do |arg1|
 end
 
 When /^I fill in "(.*?)" with "(.*?)"$/ do |arg1, arg2|
-  fill_in(arg1, :with => arg2)
+  #fill_in(arg1, :with => arg2)
+  #find(arg1).set arg2
+  first(:field, arg1).set(arg2)
 end
 
 When /^I press "(.*?)"$/ do |arg1|

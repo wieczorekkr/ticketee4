@@ -49,3 +49,5 @@ group :test do
 	gem 'dynamic_form'
 	gem 'factory_girl_rails'
 end
+
+gem 'devise', '~> 1.4.3'
