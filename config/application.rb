@@ -61,5 +61,14 @@ module Ticketee4
 
     # If you are deploying Rails 3.1 on Heroku, you may want to set:
     #config.assets.initialize_on_precompile = false
+
+    #eliminuje błedy typu can't mass-assign protected attributes
+    #config.mass_assignment_sanitizer = :logger
+
+    #Optionally, to have rails generators automatically generate factories instead of fixtures, add the following to your application.rb file
+    config.generators do |g|
+        g.fixture_replacement :factory_girl
+    end
+
   end
 end
