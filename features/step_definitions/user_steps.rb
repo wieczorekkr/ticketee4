@@ -21,6 +21,9 @@ Given /^I am signed in as them$/ do
   })
 end
 
+When /^I check "(.*?)"$/ do |arg1|
+  check(arg1)
+end
 
 Given /^I am signed in as "(.*?)"$/ do |email|
   	@user = User.find_by_email!(email)
